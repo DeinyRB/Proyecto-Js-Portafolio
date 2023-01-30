@@ -1,3 +1,4 @@
+/*
 import '../assets/styles/style.scss';
 
 const navLinks = document.querySelectorAll(".nav-link li");
@@ -29,3 +30,18 @@ navLinks.forEach ((link) => {
   })
 
 })
+
+navLinks.forEach ((link) => {
+  const subMenu = link.querySelector(".mobile-sub");
+  link.addEventListener("click", () => {
+    link.classList.toggle("active");
+    subMenu = classList.toggle("active-menu");
+  })
+
+})
+
+
+*/
+
+
+
