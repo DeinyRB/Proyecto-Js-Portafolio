@@ -1,5 +1,189 @@
+/* VARIABLES */
+$Almost-White: hsl(0, 0%, 98%);
+$Medium-Gray: hsl(0, 0%, 41%);
+$Almost-Black: hsl(0, 0%, 8%);
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Epilogue', sans-serif;
+  box-sizing: border-box;
 }
 
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Estilos Botones*/
+.outlined-btn,
+.transparent-btn {
+ padding: 1rem 2rem;
+ border-radius: 15px;
+ color: $Medium-Gray;
+ cursor: pointer;
+ background-color: transparent;
+}
+
+.transparent-btn {
+  border: none;
+}
+
+.transparent-btn:hover,
+.outlined-btn:hover{
+  color: $Almost-Black;
+  font-weight: 700;
+}
+
+.outlined-btn{
+  border: 1px solid $Almost-Black;
+}
+
+.primary-btn {
+  background-color: $Almost-Black;
+  width: fit-content;
+  padding: 1rem 2rem;
+  color: $Almost-White;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: $Almost-White;
+  border: 1px solid $Almost-Black;
+  color: $Almost-Black;
+  font-weight: 700;
+}
+
+
+/* Estilos de nav */
+
+.nav{
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: 3rem;
+}
+
+.nav-left{
+  display: flex;
+  align-items: center;
+}
+
+.nav-links{
+  display: flex;
+  margin-left: 4rem;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.nav-links li{
+  cursor: pointer;
+  position: relative;
+  color: $Medium-Gray;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.nav-links li:hover{
+  color: $Almost-Black;
+}
+
+
+.mobile-menu-btn{
+  display: none;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+.sub-menu{
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background-color: white;
+  gap: 1rem;
+  box-shadow: 0 0 10px 3px rgba(0,0,0,0.75);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.one{
+  bottom: -170px;
+  right: 0;
+}
+
+.two{
+  bottom: -136px;
+}
+
+.sub-menu .sub-link{
+  align-items: center;
+  width: 150px;
+  gap: 5rem;
+}
+
+.active .arrow{
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+
+.active-menu{
+  display: flex !important;
+}
+
+
+/* Estilos del Main */
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+.main-container{
+  display: grid;
+  max-width: 1100px;
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.main-heading{
+  font-size: 4rem;
+}
+
+.main-content{
+  font-size: 18px;
+  line-height: 1.8;
+  color: $Medium-Gray;
+}
+
+.logoes{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

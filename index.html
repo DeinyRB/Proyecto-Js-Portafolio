@@ -5,16 +5,19 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Proyecto-module-II-III</title>
 
   <!-- Link para el favicon -->
-  <link rel="icon" type="image/x-icon" href="./assets/logos/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/logos/favicon-32x32.png">
 
   <!-- Link para iconos de FontAwesome -->
   <script src="https://kit.fontawesome.com/64d25ab310.js" crossorigin="anonymous"></script>
 
   <!--Google Fonts-->
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -23,17 +26,14 @@
 
         <!--Munu-->
         <nav class="nav">
-          <ul>
-
             <div class="nav-container">
               <div class="nav-left">
                 <div class="nav-logo"> <img src="./assets/logos/logo.svg" alt="logo"></div>
 
               <ul class="nav-links">
-
-
                   <li>
-                    Factures<img class="arrow" src="./assets/imagenes/icon-todo.svg" alt="icono">
+                    Factures<img class="arrow" src="./assets/imagenes/icon-arrow-down.svg" alt="icono arrow down">
+                    
                     <div class="sub-menu one">
                       <p class="sub-link">
                         <img src="./assets/imagenes/icon-todo.svg" alt="icono">
@@ -56,31 +56,20 @@
                       </p>
 
                     </div>
-                    
                   </li>
-
 
 
                   <li>
                     Company
-                    <img class="arrow" src="./assets/imagenes/icon-todo.svg" alt="icono">
+                    <img class="arrow" src="./assets/imagenes/icon-arrow-down.svg" alt="icono">
+                    
                     <div class="sub-menu two">
-                      <p class="sub-link">
-                        History
-                      </p>
-
-                      <p class="sub-link">
-                        Our Team
-                      </p>
-
-                      <p class="sub-link">
-                        Blog
-                      </p>
-
+                      <p class="sub-link">History</p>
+                      <p class="sub-link">Our Team</p>
+                      <p class="sub-link">Blog</p>
                     </div>
                     
                   </li>
-
 
                   <li>Careers</li>
                   <li>About</li>
@@ -88,35 +77,31 @@
             </div>
 
           <div class="mobile-menu-btn">
-            <img src="./assets/imagenes/icon-menu.svg" alt="icono">
+            <img src="./assets/imagenes/icon-menu.svg" alt="icono menu">
           </div>
 
           <div class="mobile-menu">
             <ul class="mobile-links">
               <li>
                 <p>
-                  Factures <img class="arrow" src="./assets/imagenes/icon-arrow-down.svg" alt="icono">
+                  Factures <img class="arrow" src="./assets/imagenes/icon-arrow-down.svg" alt="icono arrow down">
                 </p>
 
                 <div class="mobile-sub">
                   <p class="sub-link">
-                    <img src="/assets/imagenes/icon-todo.svg" alt="icono">
-                    Todo List
+                    <img src="/assets/imagenes/icon-todo.svg" alt="icono">Todo List
                   </p>
 
                   <p class="sub-link">
-                    <img src="/assets/imagenes/icon-calendar.svg" alt="icono">
-                    Calendar
+                    <img src="/assets/imagenes/icon-calendar.svg" alt="icono">Calendar
                   </p>
 
                   <p class="sub-link">
-                    <img src="/assets/imagenes/icon-reminders.svg" alt="icono">
-                    Reminders
+                    <img src="/assets/imagenes/icon-reminders.svg" alt="icono">Reminders
                   </p>
 
                   <p class="sub-link">
-                    <img src="/assets/imagenes/icon-planning.svg" alt="icono">
-                    Planning
+                    <img src="/assets/imagenes/icon-planning.svg" alt="icono">Planning
                   </p>
 
                 </div>
@@ -128,18 +113,9 @@
                   <img class="arrow" src="./assets/imagenes/icon-arrow-down.svg" alt="icono">
                 </p>
                   <div class="mobile-sub">
-                  <p class="sub-link">
-                    History
-                  </p>
-
-                  <p class="sub-link">
-                    Our Team
-                  </p>
-
-                  <p class="sub-link">
-                    Blog
-                  </p>
-
+                  <p class="sub-link">History</p>
+                  <p class="sub-link">Our Team</p>
+                  <p class="sub-link">Blog</p>
                   </div>
                 </li>
 
@@ -159,33 +135,34 @@
       </header>
 
 
-    <main>
+    <main class="main">
 
       <div class="main-container">
         <div class="main-left">
           <h1 class="main-heading">
-            Make <span>remote work</span>
+            Make 
+            <span>remote work</span>
           </h1>
 
-          <p class="main-container">
+          <p class="main-content">
             Get your team in sync, no matter your
             location. Streamline processes. create
             team rituals, and watch productivity soar.
           </p>
 
-          <button class="primary-btn">Learn more</button>
-          <div class="logues">
+          <div class="primary-btn">Learn more</div>
+          <div class="logoes">
             <img src="./assets/logos/client-databiz.svg" alt="logo databiz">
             <img src="./assets/logos/client-audiophile.svg" alt="logo audio-phile">
             <img src="./assets/logos/client-meet.svg" alt="logo meet">
             <img src="./assets/logos/client-maker.svg" alt="logo maker">
           </div>
-
         </div>
 
         <div class="main-right">
           <picture>
-            <source media="(max-width:800px)" srcset="./assets/imagenes/image-hero-mobile"/>
+            <source media="(max-width:800px)" srcset="./assets/imagenes/image-hero-mobile.png"
+            />
           <img src="./assets/imagenes/image-hero-desktop.png" alt="imagen principal">
           </picture>
         </div>
@@ -197,6 +174,8 @@
     </div>
 
 
+    <!--Mando a llamar JavaScrip-->
+    <script src="./js/main.js" type="module"></script>
 
   </body>
 
